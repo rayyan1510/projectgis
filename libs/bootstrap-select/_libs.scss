@@ -1,0 +1,5 @@
+@import "../../libs/bootstrap-select/mixins";
+
+@mixin template-libs-theme($background, $color: null) {
+    @include bs-select-theme($background, $color);
+}

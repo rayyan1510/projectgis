@@ -1,0 +1,41 @@
+@use '../../scss/_bootstrap-extended/include'as light;
+@import '../../scss/_custom-variables/libs';
+@import "./node_modules/bootstrap-select/sass/bootstrap-select";
+
+// include scss that you want to overwrite
+
+// Light style
+@if $enable-light-style {
+    .light-style {
+        @import '../../scss/_bootstrap-extended/include';
+
+        // .bootstrap-select {
+        //     ...
+        // }
+    }
+}
+
+// Dark Style
+// @if $enable-dark-style {
+//     .dark-style {
+//         @import '../../css/_bootstrap-extended/include-dark';
+
+//         .bootstrap-select {
+//             ...
+//         }
+//     }
+// }
+
+//LTR Style
+// @include app-ltr(false) {
+//     .bootstrap-select {
+//         ...
+//     }
+// }
+
+// //RTL Style
+// @include app-rtl(false) {
+//     .bootstrap-select {
+//         ...
+//     }
+// }

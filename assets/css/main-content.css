@@ -1,0 +1,25 @@
+/* page content wrapper */
+.page-content-wrapper{
+    min-width: 100vw;
+}
+
+#menu-toggle{
+    cursor: pointer;
+}
+
+/* svg hamburger */
+.nav-hamburger > svg{
+    width: 42px;
+    height: 42px;
+}
+
+.btn-warna{
+    background-color: var(--button-utama)!important;
+    font-weight: 700 !important;
+    color: var(--text-utama)!important;
+}
+
+.btn-warna:hover{
+    background-color: var(--bg-hover-sekunder)!important;
+    color: var(--text-utama)!important;
+}

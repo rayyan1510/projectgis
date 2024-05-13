@@ -1,0 +1,11 @@
+@import "../../scss/_bootstrap-extended/functions";
+
+// < !-- Add mixins that you need for this plugin -->
+@mixin bs-select-theme($background, $color: null) {
+    $color: if($color, $color, yiq($background));
+
+    .bootstrap-select .dropdown-menu.inner a[aria-selected="true"] {
+        background: $background !important;
+        color: $color !important;
+    }
+}
