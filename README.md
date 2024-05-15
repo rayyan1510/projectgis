@@ -1,2 +1,2 @@
 # projectgis
- this is project gis
+ Projek ini memuat tentang sistem informasi lokasi warnet yang ada dikota medan
