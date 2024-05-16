@@ -13,12 +13,12 @@
  -->
 <!-- beautify ignore:start -->
 <html
-    lang="en"
-    class="light-style customizer-hide"
-    dir="ltr"
-    data-theme="theme-default"
-    data-assets-path="./assets/"
-    data-template="vertical-menu-template-free"
+  lang="en"
+  class="light-style customizer-hide"
+  dir="ltr"
+  data-theme="theme-default"
+  data-assets-path="./assets/"
+  data-template="vertical-menu-template-free"
 >
   <head>
     <meta charset="utf-8" />
@@ -27,12 +27,10 @@
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
     />
 
-    <title>Login</title>
+    <title>Register</title>
 
     <meta name="description" content="" />
 
-    <!-- Favicon -->
-    <!-- <link rel="icon" type="image/x-icon" href="./assets/img/favicon/favicon.ico" /> -->
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -70,7 +68,7 @@
     <div class="container-xxl">
       <div class="authentication-wrapper authentication-basic container-p-y">
         <div class="authentication-inner">
-          <!-- Register -->
+          <!-- Register Card -->
           <div class="card">
             <div class="card-body">
               <!-- Logo -->
@@ -135,25 +133,38 @@
                 </a>
               </div>
               <!-- /Logo -->
-              <h4 class="mb-2">Welcome to CyberWave! 👋</h4>
-              <p class="mb-4">Silahkan login, pendatang!</p>
+              <h4 class="mb-2">Adventure starts here 🚀</h4>
+              <p class="mb-4">Make your account easy and fun!</p>
 
               <form id="formAuthentication" class="mb-3" action="index.html" method="POST">
                 <div class="mb-3">
-                  <label for="email" class="form-label">Email or Username</label>
+                  <label for="name" class="form-label">Name</label>
                   <input
                     type="text"
                     class="form-control"
-                    id="email"
-                    name="email-username"
-                    placeholder="Enter your email or username"
+                    id="name"
+                    name="name"
+                    placeholder="Ex. Jon Doe"
                     autofocus
                   />
                 </div>
+                <div class="mb-3">
+                  <label for="username" class="form-label">Username</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="username"
+                    name="username"
+                    placeholder="Enter your username"
+                    autofocus
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="text" class="form-control" id="email" name="email" placeholder="Enter your email" />
+                </div>
                 <div class="mb-3 form-password-toggle">
-                  <div class="d-flex justify-content-between">
-                    <label class="form-label" for="password">Password</label>
-                  </div>
+                  <label class="form-label" for="password">Password</label>
                   <div class="input-group input-group-merge">
                     <input
                       type="password"
@@ -166,27 +177,21 @@
                     <span class="input-group-text cursor-pointer"><i class="bx bx-hide"></i></span>
                   </div>
                 </div>
-                <div class="mb-3">
-                  <!-- <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="remember-me" />
-                    <label class="form-check-label" for="remember-me"> Remember Me </label>
-                  </div> -->
-                  <br>
-                </div>
-                <div class="mb-3">
-                  <button class="btn btn-primary d-grid w-100" type="submit">Sign in</button>
-                </div>
+
+                <br>
+
+                <button class="btn btn-primary d-grid w-100">Sign up</button>
               </form>
-                <!-- Register -->
-                <p class="text-center">
-                    <span>Belum punya akun?</span>
-                    <a href="register.php">
-                        <span>Register dong!</span>
-                    </a>
-                </p>
-                <!-- Register End-->
+
+              <p class="text-center">
+                <span>Udah punya akun?</span>
+                <a href="./login.php">
+                  <span>Balik ke login dong!</span>
+                </a>
+              </p>
             </div>
           </div>
+          <!-- Register Card -->
         </div>
       </div>
     </div>
