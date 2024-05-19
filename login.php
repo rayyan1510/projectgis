@@ -138,15 +138,15 @@
               <h4 class="mb-2">Welcome to CyberWave! 👋</h4>
               <p class="mb-4">Silahkan login, pendatang!</p>
 
-              <form id="formAuthentication" class="mb-3" action="index.html" method="POST">
+              <form id="formAuthentication" class="mb-3" action="" method="POST">
                 <div class="mb-3">
-                  <label for="email" class="form-label">Email or Username</label>
+                  <label for="email" class="form-label">Username</label>
                   <input
                     type="text"
                     class="form-control"
                     id="email"
                     name="email-username"
-                    placeholder="Enter your email or username"
+                    placeholder="Enter your username"
                     autofocus
                   />
                 </div>

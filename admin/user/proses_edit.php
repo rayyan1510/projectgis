@@ -6,7 +6,7 @@
 if (isset($_POST['edit']) === true) {
     # code...
     $id = htmlspecialchars($_POST['id_user']);
-    $nama_user = htmlspecialchars($_POST['nama_user']);
+    $nama_user = htmlspecialchars($_POST['nama']);
     $email = htmlspecialchars($_POST['email']);
     $password = htmlspecialchars($_POST['password']);
     $level = 'User';

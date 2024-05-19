@@ -67,9 +67,9 @@
              </a>
          </li>
 
-         <!-- user -->
+         <!-- warnet -->
          <li class="menu-item">
-             <a href="cards-basic.html" class="menu-link">
+             <a href="?url=warnet" class="menu-link">
                  <i class="menu-icon tf-icons bx bx-dock-top"></i>
                  <div data-i18n="Basic">Daftar Warnet</div>
              </a>

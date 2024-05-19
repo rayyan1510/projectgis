@@ -13,14 +13,14 @@ if ($result > 0) {
             confirmButtonText: 'OK'
         }).then((result) => {
             if (result.isConfirmed) {
-                window.location = '?url=table_user'; 
+                window.location = '?url=user'; 
             }
         })
     </script>";
 } else {
     echo "<script>
         alert('Data Gagal di hapus');
-        window.location.href = '?url=table_user';
+        window.location.href = '?url=user';
     </script>";
 }
 

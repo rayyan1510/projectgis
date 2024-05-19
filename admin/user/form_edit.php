@@ -4,13 +4,13 @@
         # code...
         $id = $_GET['id'];
     } else {
-        header("Location: ");
+        header("Location: ?url=user");
     }
 
 
     ?>
 
-  <h5 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">User/</span> Horizontal Layouts</h5>
+  <h5 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">User/</span> Edit</h5>
 
   <!-- row -->
   <div class="row">
@@ -31,7 +31,7 @@
                       <!-- nama  -->
                       <div class="mb-3">
                           <label class="form-label" for="basic-default-fullname">Nama User</label>
-                          <input type="text" class="form-control" id="basic-default-fullname" name="nama_user" value="<?= $data['nama']; ?>" placeholder="Nama" required />
+                          <input type="text" class="form-control" id="basic-default-fullname" name="nama" value="<?= $data['nama']; ?>" placeholder="Nama" required />
                       </div>
                       <!-- nama -->
 
@@ -54,7 +54,7 @@
                       </div>
                       <!-- password -->
 
-                      <button type="submit" name="edit" class="btn btn-warning">Ubah</button>
+                      <button type="submit" name="edit" class="btn btn-warning">Edit</button>
                       <a href="?url=user" class="btn btn-secondary">
                           <i class='bx bx-left-arrow-alt me-1'></i>
                           Kembali

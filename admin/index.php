@@ -84,14 +84,10 @@ include '../connection.php';
 
                     <div class="container-xxl flex-grow-1 container-p-y">
 
-                        <?php
-
-                        include 'config-hal.php';
-
-                        ?>
-
+                        <?php include 'config-hal.php'; ?>
 
                     </div>
+
                     <!-- / Content -->
 
                     <!-- Footer -->
@@ -114,6 +110,12 @@ include '../connection.php';
     <script src="../assets/js/my.js"></script>
     <!-- end my js -->
 
+    <!-- datatables -->
+    <script src="https://cdn.datatables.net/1.13.3/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.3/js/dataTables.bootstrap5.min.js"></script>
+    <!-- datatables -->
+
+
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->
     <script src="../assets/vendor/libs/jquery/jquery.js"></script>
@@ -121,29 +123,17 @@ include '../connection.php';
     <script src="../assets/vendor/js/bootstrap.js"></script>
     <script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
 
-
-    <!-- datatables -->
-    <script src="https://cdn.datatables.net/1.13.3/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/1.13.3/js/dataTables.bootstrap5.min.js"></script>
-
-    <!-- datatables -->
-
-
     <script src="../assets/vendor/js/menu.js"></script>
     <!-- endbuild -->
 
-
     <!-- Vendors JS -->
     <script src="../assets/vendor/libs/apex-charts/apexcharts.js"></script>
-    <script src="../assets/js/dashboards-analytics.js"></script>
 
     <!-- Main JS -->
     <script src="../assets/js/main.js"></script>
 
     <!-- Page JS -->
-
-    <!-- my JS -->
-    <script src="../assets/js/my.js"></script>
+    <script src="../assets/js/dashboards-analytics.js"></script>
 
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
