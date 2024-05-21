@@ -7,7 +7,7 @@ if (isset($_GET['url'])) {
     $url = @$_GET['url'];
 
     switch ($url) {
-            // bagian table warnet
+            // bagian table user
         case 'user':
             # code...
             require_once './user/user.php';

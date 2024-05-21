@@ -53,6 +53,9 @@
     <!-- Vendors CSS -->
     <link rel="stylesheet" href="./assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
 
+    <!-- sweetalert -->
+    <script src="./assets/vendor/libs/sweetalert2/node_modules/sweetalert2/dist/sweetalert2.min.js"></script>
+
     <!-- Page CSS -->
     <!-- Page -->
     <link rel="stylesheet" href="./assets/vendor/css/pages/page-auth.css" />
@@ -138,14 +141,14 @@
               <h4 class="mb-2">Welcome to CyberWave! 👋</h4>
               <p class="mb-4">Silahkan login, pendatang!</p>
 
-              <form id="formAuthentication" class="mb-3" action="" method="POST">
+              <form id="formAuthentication" class="mb-3" action="proses_login.php" method="POST">
                 <div class="mb-3">
-                  <label for="email" class="form-label">Username</label>
+                  <label for="email" class="form-label">Email</label>
                   <input
-                    type="text"
+                    type="email"
                     class="form-control"
                     id="email"
-                    name="email-username"
+                    name="email"
                     placeholder="Enter your username"
                     autofocus
                   />
