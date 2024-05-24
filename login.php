@@ -27,7 +27,7 @@
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
     />
 
-    <title>Login</title>
+    <title>Cyberwave Net - Login</title>
 
     <meta name="description" content="" />
 
@@ -134,7 +134,7 @@
                       </g>
                     </svg>
                   </span>
-                  <span class="app-brand-text demo text-body fw-bolder">CyberWave</span>
+                  <span class="app-brand-text demo text-body fw-bolder">Cyberwave Net</span>
                 </a>
               </div>
               <!-- /Logo -->

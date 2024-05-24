@@ -1,8 +1,5 @@
 <?php
 
-
-// var_dump($_POST);
-
 if (isset($_POST['edit']) === true) {
     # code...
     $id = htmlspecialchars($_POST['id_user']);

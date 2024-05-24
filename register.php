@@ -27,7 +27,7 @@
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
     />
 
-    <title>Register</title>
+    <title>Cyberwave Net - Register</title>
 
     <meta name="description" content="" />
 
@@ -129,14 +129,14 @@
                       </g>
                     </svg>
                   </span>
-                  <span class="app-brand-text demo text-body fw-bolder">CyberWave</span>
+                  <span class="app-brand-text demo text-body fw-bolder">Cyberwave Net</span>
                 </a>
               </div>
               <!-- /Logo -->
               <h4 class="mb-2">Adventure starts here 🚀</h4>
               <p class="mb-4">Make your account easy and fun!</p>
 
-              <form id="formAuthentication" class="mb-3" action="index.html" method="POST">
+              <form id="formAuthentication" class="mb-3" action="proses_register.php" method="POST">
                 <div class="mb-3">
                   <label for="name" class="form-label">Name</label>
                   <input
@@ -145,23 +145,12 @@
                     id="name"
                     name="name"
                     placeholder="Ex. Jon Doe"
-                    autofocus
-                  />
-                </div>
-                <div class="mb-3">
-                  <label for="username" class="form-label">Username</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="username"
-                    name="username"
-                    placeholder="Enter your username"
-                    autofocus
+                    autofocus required
                   />
                 </div>
                 <div class="mb-3">
                   <label for="email" class="form-label">Email</label>
-                  <input type="text" class="form-control" id="email" name="email" placeholder="Enter your email" />
+                  <input type="text" class="form-control" id="email" name="email" placeholder="Enter your email" required />
                 </div>
                 <div class="mb-3 form-password-toggle">
                   <label class="form-label" for="password">Password</label>
@@ -172,7 +161,7 @@
                       class="form-control"
                       name="password"
                       placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;"
-                      aria-describedby="password"
+                      aria-describedby="password" required
                     />
                     <span class="input-group-text cursor-pointer"><i class="bx bx-hide"></i></span>
                   </div>
@@ -180,7 +169,7 @@
 
                 <br>
 
-                <button class="btn btn-primary d-grid w-100">Sign up</button>
+                <button class="btn btn-primary d-grid w-100" name="submit">Sign up</button>
               </form>
 
               <p class="text-center">

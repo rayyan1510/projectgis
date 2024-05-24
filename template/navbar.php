@@ -6,7 +6,7 @@ if (isset($_SESSION['level']) && $_SESSION['level'] == 'User') {
     <nav class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme" id="layout-navbar">
         <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
             <div class="">
-                <a class="navbar-brand fw-bold" href="?page=index.php">CyberWave</a>
+                <a class="navbar-brand fw-bold" href="?page=index.php">CyberWave Net</a>
             </div>
             <ul class="navbar-nav flex-row align-items-center ms-auto">
                 <li class="nav-item pe-3">
@@ -29,7 +29,7 @@ if (isset($_SESSION['level']) && $_SESSION['level'] == 'User') {
     <nav class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme" id="layout-navbar">
         <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
             <div class="">
-                <a class="navbar-brand fw-bold" href="?page=index.php">CyberWave</a>
+                <a class="navbar-brand fw-bold" href="?page=index.php">CyberWave Net</a>
             </div>
             <ul class="navbar-nav flex-row align-items-center ms-auto">
                 <li class="nav-item pe-3">

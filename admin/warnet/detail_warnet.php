@@ -14,7 +14,6 @@ $numrows = mysqli_num_rows($resultView);
 
 $resultWarnet = mysqli_query($koneksi, "SELECT * FROM tbl_warnet WHERE id_warnet = $id");
 $data = mysqli_fetch_assoc($resultWarnet);
-// var_dump($data);
 ?>
 
 <h5 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Warnet /</span> Details</h5>

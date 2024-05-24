@@ -13,8 +13,6 @@ if (isset($_POST['edit']) === true) {
     $latitude = htmlspecialchars($_POST['latitude']);
     $longitude = htmlspecialchars($_POST['longitude']);
 
-    // var_dump($_POST);
-    // var_dump($_FILES);
     $namaFile = $_FILES['gambar']['name'];
     $errorFile = $_FILES['gambar']['error'];
     $tmpName = $_FILES['gambar']['tmp_name'];

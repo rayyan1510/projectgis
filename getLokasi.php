@@ -14,21 +14,14 @@ if ($result->num_rows  > 0) {
         # code...
         $locations[] = $row;
     }
-    // $data = json_encode(array('results' => $locations));
-    // echo $data;
 } else {
     echo json_encode(["error" => "No locations found"]);
     exit;
-    // echo "0 Hasil";
 }
 $koneksi->close();
 
 header('Content-Type: application/json');
 echo json_encode($locations);
-
-// echo $data;
-// var_dump($locations);
-// echo $locations;
 
 
 // mysqli_close($koneksi);

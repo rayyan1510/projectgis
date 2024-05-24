@@ -1,8 +1,6 @@
 <?php
 
 
-// var_dump($_POST);
-
 if (isset($_POST['tambah']) === true) {
     # code...
     $nama_user = htmlspecialchars($_POST['nama']);

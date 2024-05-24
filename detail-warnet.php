@@ -1,9 +1,12 @@
 <?php
-include '../connection.php';
+include './connection.php';
 
 $id = $_GET['id'];
 $resultWarnet = mysqli_query($koneksi, "SELECT * FROM tbl_warnet WHERE id_warnet='$id'");
 $data = mysqli_fetch_assoc($resultWarnet);
+
+$resultView = mysqli_query($koneksi, "SELECT * FROM `view_detail_warnet` WHERE`id_warnet` = $id");
+$numrows = mysqli_num_rows($resultView);
 
 if (!$data) {
     echo "Data tidak ditemukan!";
@@ -13,7 +16,7 @@ if (!$data) {
 <!-- hero section -->
 <div class="container mt-4 mb-5">
     <h1 class="text-center mb-4">Cyberwave Net</h1>
-    <!-- <p class="text-center mb-4">Detail Warnet</p> -->
+    <p class="text-center mb-4">Detail Warnet.</p>
 </div>
 <!-- end hero -->
 
@@ -29,7 +32,7 @@ if (!$data) {
                 <!-- User Card -->
                 <div class="user-avatar-section">
                     <div class=" d-flex align-items-center flex-column">
-                        <img class="d-block rounded my-4" src="../assets/img/upload/<?= $data['gambar']; ?>" height="100" width="100" alt="<?= $data['gambar']; ?>" />
+                        <img class="d-block rounded my-4" src="./assets/img/upload/<?= $data['gambar']; ?>" height="100" width="100" alt="<?= $data['gambar']; ?>" />
                         <div class="user-info text-center">
                             <h4 class="mb-3"><?= $data['nama_warnet']; ?></h4>
                         </div>
@@ -58,29 +61,45 @@ if (!$data) {
                     </ul>
                 </div>
                 <!-- /User Card -->
-                <hr class="my-0 mb-2">
 
-                <h5 class="pb-3">Bagikan pengalaman anda</h5>
+                <div class="table-responsive mb-3 p-3">
+                    <table class="table datatable-project border-top table-hover" id="myTable">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Nama Pengunjung</th>
+                                <th>Komentar</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php
+                            $no = 1;
+                            if ($numrows > 0) {
+                                while ($row = mysqli_fetch_assoc($resultView)) : ?>
+                                    <tr>
+                                        <td><?= $no++; ?></td>
+                                        <td><?= $row["nama_user"]; ?></td>
+                                        <td><?= $row["komentar"]; ?></td>
+                                    </tr>
+                            <?php
+                                endwhile; //endwhile
+                            } else {
+                                echo "
+                                <tr>
+                                    <td colspan='3'>Belum ada direview</td>
+                                    </tr>
+                                ";
+                            }
+                            ?>
+                        </tbody>
+                    </table>
+                </div>
 
-                <!-- form -->
-                <form action="?page=proses_komentar" method="post">
+                <a href="?page=daftar-warnet" class="btn btn-secondary">
+                    <i class='bx bx-left-arrow-alt me-1'></i>
+                    Kembali
+                </a>
 
-                    <input type="hidden" name="id_warnet" value="<?= $data['id_warnet']; ?>">
-
-                    <!-- deskripsi -->
-                    <div class="mb-3">
-                        <label class="form-label" for="basic-default-message">Coba ceritakan pengalaman anda</label>
-                        <textarea id="basic-default-message" class="form-control" name="komentar" placeholder="Bagikan pengalaman anda ditempat ini!"></textarea>
-                    </div>
-                    <!-- deskripsi -->
-
-                    <button type="submit" name="tambah" class="btn btn-success">Tambah Data</button>
-                    <a href="?page=daftar-warnet" class="btn btn-secondary">
-                        <i class='bx bx-left-arrow-alt me-1'></i>
-                        Kembali
-                    </a>
-                </form>
-                <!-- end form -->
             </div>
             <!-- end left side konten -->
             <!-- right side konten -->
@@ -108,7 +127,7 @@ if (!$data) {
 
         // set map 
         const map = new google.maps.Map(document.getElementById("map"), {
-            zoom: 12,
+            zoom: 18,
             center: position
         });
 

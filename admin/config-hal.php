@@ -1,6 +1,5 @@
 <?php
 
-// var_dump($_GET);
 
 if (isset($_GET['url'])) {
     # code...

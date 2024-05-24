@@ -1,7 +1,7 @@
 <!-- hero section -->
 <div class="container mt-4 mb-5">
     <h1 class="text-center mb-4">Cyberwave Net</h1>
-    <p class="text-center mb-4">Selamat datang di sistem informasi penyebaran warnet yang ada di kota Medan.</p>
+    <p class="text-center mb-4">Selamat datang <span style="font-weight: bold"><?= $_SESSION['nama']; ?></span> di sistem informasi penyebaran warnet yang ada di kota Medan.</p>
 </div>
 <!-- end hero -->
 
@@ -10,8 +10,6 @@
     <h3 class="card-header text-center">Peta Penyebaran Warnet</h3>
 
     <div class="container align-items-center align-items-center justify-content-center py-3">
-
-
         <div id="map" style="width:100%;height:480px;"></div>
     </div>
 </div>

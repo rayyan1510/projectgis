@@ -1,5 +1,5 @@
 <?php
-// var_dump($_GET);
+
 
 if (isset($_GET['page'])) {
     # code...
@@ -10,6 +10,11 @@ if (isset($_GET['page'])) {
         case 'daftar-warnet':
             # code...
             require_once './daftar_warnet.php';
+            break;
+
+        case 'detail_warnet':
+            # code...
+            require_once './detail-warnet.php';
             break;
 
             // bagian tentang kami
